@@ -16,7 +16,7 @@
 To install the package with Redis support, simply run:
 
 ```bash
-pip install cache_manager
+pip install python-cache-manager
 
 
 
