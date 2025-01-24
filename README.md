@@ -17,6 +17,22 @@ To install the package with Redis support, simply run:
 
 ```bash
 pip install python-cache-manager
+```
+## Usage
 
+Here's an example of how to use the package:
+
+```python
+# Import the package
+from cache_manager_factory import CacheManagerFactory
+
+# Obtain a Redis Cache Manager instance
+redis_cache_manager = CacheManagerFactory.get_cache_manager()
+print(f"Redis cache manager obtained: {redis_cache_manager}")
+
+# Obtain a Memcached Cache Manager instance by specifying the backend
+memcached_cache_manager = CacheManagerFactory.get_cache_manager(backend='memcache', host='localhost', port=11211)
+print(f"Memcached cache manager obtained: {memcached_cache_manager}")
+```
 
 
